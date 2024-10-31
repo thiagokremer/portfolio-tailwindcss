@@ -8,25 +8,30 @@
 </head>
 <body>
 
-    <header class="w-4/5 bg-red-500 fixed top-5 lft 2-4">
-        <h1>logo</h1>
+    <header class="z-20 w-4/5 fixed top-7 left-2/4 -translate-x-1/2 flex justify-between items-center text-teste text-xl text-principal">
+        <h1>Jovanca</h1>
 
-        <nav>
-            <ul class="flex gap-[7]">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a class="p-5 border border-solid border-white href="">Hire Mee</a></li>
+        <nav class="max-tablet:hidden">
+            <ul class="flex gap-7">
+                <li><a class="hover:underline hover:text-secundario" href="">Home</a></li>
+                <li><a class="hover:underline hover:text-secundario" href="">About</a></li>
+                <li><a class="hover:underline hover:text-secundario"href="">Services</a></li>
+                <li><a class="p-2 border border-solid border-white href="">Hire Mee</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>I'm Jovanska Lovata.</h1>
-        <p>UI/UX Designer and Web Developer</p>
-        <img src="./img/home.png" alt="">
-        <p>JOVANKA</p>
+    <section class="z-10 relative h-screen bg-gradiente flex flex-col justify-end items-center gap-y-20">
+        <div class="text-center font-bold">
+            <h class="text-principal laptop:text-titulo text-subtitulo">I'm Jovanska Lovata.</h>
+            <p class="text-secundario text-paragrafo">UI/UX Designer and Web Developer</p>
+        </div>
+        <img class="max-w-sm tablet:max-w-md" src="./img/home.png" alt="">
+        <p class="absolute left-0 max-tablet:-left-20 top-1/2 translate-y-1/2 text-secundario font-bold tracking-[30px] text-paragrafo rotate-[270deg]  ">JOVANKA</p>
     </section>
+
+
+
 
 </body>
 </html>
